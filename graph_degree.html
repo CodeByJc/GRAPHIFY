@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\JC\JC.ICT\JC.GT\logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphify - Degree Calculation</title>
+    <link rel="stylesheet" href="graph.css">
+    <link rel="stylesheet" href="general.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="file:///D:/JC/JC.ICT/JC.GT/index.html">Graphify</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Graph Generation Form Section -->
+        <div class="form-container">
+          <form id="graphForm" class="graph-form">
+            <label for="vertices">Vertices:</label>
+            <input type="text" id="vertices" placeholder="A,B,C" required />
+  
+            <label for="edges">Edges (source-target-weight):</label>
+            <input type="text" id="edges" placeholder="A-B-1,B-C-2" required />
+  
+            <label for="graphType">Graph Type:</label>
+            <select id="graphType" required>
+              <option value="undirected">Undirected</option>
+              <option value="directed">Directed</option>
+            </select>
+            <button type="submit">Generate Graph</button>
+          </form>
+        </div>
+        <div class="graph-container">
+            <div id="graph"></div>
+        </div>
+        <div class="zoom-container">
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+        </div>
+        <div id="graphdetail">
+            <h2>Graph Details</h2>
+            <div class="details">
+                <div class="detail-item">
+                    <strong>Number of Vertices:</strong>
+                    <span id="numVertices">0</span>
+                </div>
+                <div class="detail-item">
+                    <strong>Number of Edges:</strong>
+                    <span id="numEdges">0</span>
+                </div>
+            </div>
+            <div id="connectionTable">
+                <h3>Vertex Connections</h3>
+                <table>
+                    <thead>
+                        <tr id="connectionTableHeader">
+                            <th>Vertex</th>
+                            <th>Degree</th>
+                            <th>Connected Vertices</th>
+                        </tr>
+                    </thead>
+                    <tbody id="connectionTableBody">
+                        <!-- Rows will be populated here -->
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Developed by
+                <a href="https://www.linkedin.com/in/jaineel-chhatraliya" target="_blank">Jaineel Chhatraliya</a> and
+                <a href="https://www.linkedin.com/in/hetansh-shah-581732239/" target="_blank">Hetansh Shah</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="d3.v5.min.js"></script>
+    <script src="graph2.js"></script>
+    
+</body>
+</html>
