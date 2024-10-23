@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="file:///D:/JC/JC.ICT/JC.GT/index.html">Graphify</a>
+                <a href="index.html">Graphify</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -26,6 +26,30 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Dijkstra Algorith Description -->
+    <section id="graphInfo">
+        <h2>What is Dijkstra's Algorithm?</h2>
+        <p>Dijkstra's algorithm is a popular graph search algorithm used to find the shortest path between nodes in a graph. It works by selecting the node with the smallest known distance from the start node, updating the distances of its neighbors, and repeating the process until all nodes have been visited. The algorithm is widely used in network routing, navigation systems, and many other fields where finding the shortest path is essential.</p>
+    
+        <h3>Where is Dijkstra's Algorithm Used?</h3>
+        <p>Dijkstra's algorithm has various real-world applications, including:</p>
+        <ul>
+            <li><strong>GPS Navigation:</strong> Finding the shortest route between two locations on a map.</li>
+            <li><strong>Network Routing:</strong> Determining the optimal path for data packets to travel across a network.</li>
+            <li><strong>Video Games:</strong> Guiding characters or objects along the shortest path to a target location.</li>
+            <li><strong>Logistics and Supply Chain:</strong> Optimizing delivery routes for transportation and shipping.</li>
+            <li><strong>Robotics:</strong> Helping robots navigate efficiently in dynamic environments.</li>
+        </ul>
+    
+        <h3>Examples of Dijkstra's Algorithm</h3>
+        <div class="example-graphs">
+            <img src="dij1.jpg" alt="Dijkstra's Algorithm Example 1" style="width:300px;height:auto;margin:10px;">
+            <img src="dij2.jpg" alt="Dijkstra's Algorithm Example 2" style="width:300px;height:auto;margin:10px;">
+            <img src="dij3.png" alt="Dijkstra's Algorithm Example 3" style="width:300px;height:auto;margin:10px;">
+        </div>
+    </section>
+    
 
     <!-- Graph Generation Form Section -->
         <div class="form-container">
@@ -58,10 +82,7 @@
                 <button id="zoomOut">Zoom Out</button>
         </div>
         <!-- Add this below the graph container -->
-        <div class="details-container">
-            <h3>Graph Details</h3>
-            <p id="graphDetails">Details about the graph will be displayed here.</p>
-          
+        <div class="details-container">          
             <h3>Shortest Path Details</h3>
             <p id="shortestPathDetails">Details about the shortest path will be displayed here.</p>
           </div>

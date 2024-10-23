@@ -15,6 +15,64 @@ body {
     align-items: center;
 }
 
+#graphInfo {
+    width: 80%; /* Uniform width with other sections */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center align the content */
+}
+
+#graphInfo h2, 
+#graphInfo h3 {
+    color: #1e88e5; /* Primary color for headings */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#graphInfo p {
+    font-size: 1rem;
+    color: #555; /* Slightly darker color for text */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify the paragraph text */
+}
+
+#graphInfo ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Indentation for bullet points */
+    margin-bottom: 20px;
+    text-align: left; /* Align list to the left */
+}
+
+#graphInfo li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Example Graphs Styles */
+.example-graphs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap images if needed */
+    gap: 10px; /* Space between images */
+}
+
+.example-graphs img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.example-graphs img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 /* Form Styles */
 form {
     display: flex;
